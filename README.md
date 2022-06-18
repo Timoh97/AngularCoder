@@ -31,4 +31,12 @@ ng generate class Goal==generates class in Angular
 ng generate component <name>== generates component in Angular
 ng generate directive strikethrough==generates directive that allows word strikethrough
 ng generate pipe date-count==generates a pipe called date-count
+<!-- This command has created the folder goal-form and inside it created the files that comprise a component. It has also added our goal-form component to our root module declarations array in the app.module.ts file. -->
+ng generate component goal-form
+
+## Adding Bootstrap
+<!-- This command will add bootstrap to our node modules -->
+npm install --save bootstrap popper
+<!-- making bootstrap available inside the application at the root level for us to use it. -->
+@import "~bootstrap/dist/css/bootstrap.css"
 
