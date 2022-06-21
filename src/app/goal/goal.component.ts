@@ -19,8 +19,13 @@ export class GoalComponent implements OnInit {
 
 
   // click eventbinding hide  and show logic
-  toggleDetails(index:  number){
+  toggleDetails(index: number){
     this.goals[index].showDescription = !this.goals[index].showDescription;
+  }
+  completeGoal(isComplete: any, index: number){
+    if (isComplete) {
+      this.goals.splice(index,1);
+    }
   }
   constructor() { }
 
